@@ -18,7 +18,7 @@ def extract(api_url) -> dict:
     except Exception as e:
         print(f"Error al hacer la solicitud a la API: {e}")
         return None
-
+```
 ### Tranform
 jkfsjkfkls
 ```python
@@ -31,6 +31,9 @@ def transform(data: dict) -> pd.DataFrame:
     df['web_pages'] = [','.join(map(str, l)) for l in df['web_pages']]
     df = df.reset_index(drop=True)
     return df[["domains", "country", "name", "web_pages"]]
+
+```
+
 ### Load
 dkfjsdklfjskldf
 ```python
@@ -39,3 +42,5 @@ def load(df:pd.DataFrame):
     engine = sqlalchemy.create_engine(connectionString)
     r = df.to_sql(name="universities", schema="etl", con=engine, if_exists='replace', index=False)
     print(f"{r} datos  cargados a la BD.")
+
+```
