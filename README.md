@@ -46,15 +46,15 @@ def load(df:pd.DataFrame):
 
 ```
 
-#Requirements
-SQLAlchemy           2.0.23
-python-dateutil      2.8.2
-pyodbc               5.0.1
-pip                  23.3.1
-pandas               1.4.3
-nbclient             0.6.4
-nbformat             5.4.0
-ipython              8.4.0
-ipython-genutils     0.2.0
-fastjsonschema       2.15.3
-jsonschema           4.6.0
+### Requirements
+* SQLAlchemy           2.0.23
+* python-dateutil      2.8.2
+* pyodbc               5.0.1
+* pip                  23.3.1
+* pandas               1.4.3
+* nbclient             0.6.4
+* nbformat             5.4.0
+* ipython              8.4.0
+* ipython-genutils     0.2.0
+* fastjsonschema       2.15.3
+* jsonschema           4.6.0
