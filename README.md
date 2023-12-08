@@ -36,7 +36,7 @@ def transform(data: dict) -> pd.DataFrame:
 ```
 
 ### Load
-The transformed data is loaded into a database , in this case in sql database.
+The transformed data is loaded into a database, in this case I used the new free database from Microsoft.
 ```python
 def load(df:pd.DataFrame):
     connectionString = f'mssql+pyodbc://kep:Bobi*5598@kepserver.database.windows.net:1433/kep?driver=ODBC+Driver+17+for+SQL+Server'
