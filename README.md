@@ -1,4 +1,5 @@
 # ETL proyect
+In this project I used an API that contains all the universities in the world, I only used the data from the universities of Central America, they were extracted, transformed based on Pandas and uploaded to the SQL database.
 ## ETL
 ETL is a data integration method that combine data from diferents sources. ETL cleanses and organizes data in a way which addresses.
 
