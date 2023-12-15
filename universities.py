@@ -63,8 +63,8 @@ def etl():
     print(f"Total de datos obtenidos: {len(todos_los_datos)}")
     guardar_en_txt(todos_los_datos, archivo_txt)
 
-    popo = transform(todos_los_datos)
-    load(popo)
+    var = transform(todos_los_datos)
+    load(var)
 
 if __name__ == '__main__':
     etl()
