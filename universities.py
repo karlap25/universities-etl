@@ -38,7 +38,8 @@ def transform(data: dict) -> pd.DataFrame:
     return df[["domains", "country", "name", "web_pages"]]
 
 def load(df:pd.DataFrame):
-    connectionString = f'mssql+pyodbc://kep:Bobi*5598@kepserver.database.windows.net:1433/kep?driver=ODBC+Driver+17+for+SQL+Server'
+    connectionString = f'mssql+pyodbc://xxx:xxxx@xxxserver.database.windows.net:1433/kep?driver=ODBC+Driver+17+for+SQL+Server'
+    #xxx = password and name data base
     engine = sqlalchemy.create_engine(connectionString)
     r = df.to_sql(name="universities", schema="etl", con=engine, if_exists='replace', index=False)
     print(f"{r} datos  cargados a la BD.")
